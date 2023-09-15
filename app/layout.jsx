@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
 import "./globals.css";
-import { Inter, Montserrat } from "next/font/google";
+import { Inter, Montserrat, Fira_Code } from "next/font/google";
 
 export const metadata = {
   title: "CV Workshop",
@@ -11,13 +11,13 @@ export const metadata = {
 
 // Du kan lese mer om fonter her: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 
-// const font = Inter({ subsets: ["latin"] });
-const montserrat = Montserrat({ subsets: ["latin"] });
+const font = Fira_Code({ subsets: ["latin"] });
+// const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body className={font.className}>
         <Header />
         {children}
       </body>
