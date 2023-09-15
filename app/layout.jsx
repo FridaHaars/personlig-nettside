@@ -11,13 +11,13 @@ export const metadata = {
 
 // Du kan lese mer om fonter her: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 
-const font = Inter({ subsets: ["latin"] });
-// const montserrat = Montserrat({ subsets: ["latin"] });
+// const font = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className={montserrat.className}>
         <Header />
         {children}
       </body>

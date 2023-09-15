@@ -9,7 +9,7 @@ import { CVSection } from "@/components/CVSection";
 
 const sections = [
   {
-    title: "Erfaring",
+    title: "Arbeidserfaring",
     sectionTitle: "Arbeidssted | Rolle",
     period: "Måned YYYY - Måned YYYY",
     description:
@@ -17,8 +17,8 @@ const sections = [
   },
   {
     title: "Utdanning",
-    sectionTitle: "Utdanningssted | Studieretning",
-    period: "Måned YYYY - Måned YYYY",
+    sectionTitle: "Universitetet i Bergen | Informatikk: Datasikkerhet",
+    period: "Aug 2021 - Jun 2024",
     description:
       "En rask beskrivelse av hva du skulle lære og lærte på studiet. Er det noe spesielt du tar med deg videre? Hva var det du fordypte deg i? Beskriv kort.",
   },
