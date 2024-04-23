@@ -19,24 +19,21 @@ export function Introduction() {
         height={278}
       />
       <div className='flex flex-col gap-5 my-auto text-center sm:text-left'>
-        <h1 style={{ color: 'darkgoldenrod' }} className='text-secondary-700 text-4xl sm:text-6xl'>Velkommen</h1>
+        <h1 style={{ color: 'darkgoldenrod' }} className='text-secondary-700 text-4xl sm:text-6xl'>Frida Angen Hårstad</h1>
         <p>
-          Jeg heter Frida Angen Hårstad. <br/>
-          Du kan kontakte med via epost: {' '}
+          Epost: {' '}
           <a
             className='font-bold hover:underline'
             href='mailto:fridaharstad@gmail.com'
           >
             fridaharstad@gmail.com
           </a>
-            ,<br/>
-            eller 
-            {' '}
+            <br/>LinkedIn: {' '}
           <a
             className='font-bold hover:underline'
             href='www.linkedin.com/in/FridaAH'
           >
-            LinkedIn
+            www.linkedin.com/in/FridaAH
           </a>
           . 
         </p>
