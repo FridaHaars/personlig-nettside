@@ -5,25 +5,32 @@
  * Eksempel:
  * - Du kan legge til flere prosjekter i latestProjects listen. Husk a siden den lenker til må også lages.
  */
-import Link from "next/link";
-import Image from "next/image";
+import Link from 'next/link';
+import Image from 'next/image';
 
 // Her definerer hvilke prosjekter vi vil vise nedenfor.
 const latestProjects = [
   {
-    title: "Overskrift",
+    title: 'Snake',
     description:
-      "Kort forklaring av hva prosjektet omhandlet, eventuelt hvem det var for.",
-    image: "/design-sprint.jpg",
-    href: "/prosjekter/tilfeldig-prosjekt",
+      'Klassisk Snake-spill skrevet i Python for ukesprosjekt i INF100 ved UiB.',
+    image: '/snake_menu.jpg',
+    href: '/prosjekter/snake',
+  },
+  {
+    title: 'Prosjekter ved KiB',
+    description:
+      'Prosjekter utført ved Kunstskolen i Bergen.',
+    image: '/space.jpg',
+    href: '/prosjekter/kib',
   },
 ];
 
 export function LatestProjects() {
   return (
-    <div className="flex flex-col gap-5">
-      <div className="flex flex-col gap-3">
-        <h2 className="text-xl">Siste prosjekter</h2>
+    <div className='flex flex-col gap-5'>
+      <div className='flex flex-col gap-3'>
+        <h2 className='text-xl'>Siste prosjekter</h2>
         {latestProjects.map((project) => (
           // Vi går over alle prosjektene vi har definert over og lager en ProjectPreview for hvert av dem.
           // Når du looper over noe i React må du gi det en unik key. Her bruker vi tittelen som key.
@@ -33,8 +40,8 @@ export function LatestProjects() {
       </div>
 
       <Link
-        className="text-secondary-700 font-bold hover:underline"
-        href="/prosjekter"
+        className='text-secondary-700 font-bold hover:underline'
+        href='/prosjekter'
       >
         Se alle mine prosjekter
       </Link>
@@ -44,10 +51,10 @@ export function LatestProjects() {
 
 function ProjectPreview({ title, description, image, href }) {
   return (
-    <a href={href} className="flex flex-col gap-4">
-      <Image alt="Bilde av prosjektet" src={image} width={327} height={216} />
-      <div className="flex flex-col gap-2">
-        <h3 className="text-lg">{title}</h3>
+    <a href={href} className='flex flex-col gap-4'>
+      <Image alt='Bilde av prosjektet' src={image} width={327} height={216} />
+      <div className='flex flex-col gap-2'>
+        <h3 className='text-lg'>{title}</h3>
         <p>{description}</p>
       </div>
     </a>
