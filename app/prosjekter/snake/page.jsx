@@ -9,14 +9,15 @@
  * - Legg til flere komponenter som viser prosjektet ditt. Disse kan være helt nye komponenter, eller du kan kopiere eksisterende komponenter fra components mappen.
  */
 import { ProjectHero } from '@/components/ProjectHero';
-import snake_menu from '../../../public/snake_menu.jpg';
+import snake_menu from '../../../public/rectangle.jpg';
 import { TextBlock } from '@/components/TextBlock';
 import { Photostrip } from '@/components/Photostrip';
 
 const images = [
-  '/design-sprint.jpg',
-  '/design-sprint.jpg',
-  '/design-sprint.jpg',
+  '/snake_menu.jpg',
+  '/snake_rules.jpg',
+  '/snake_play.jpg',
+  '/snake_debug_mode.jpg',
 ];
 
 export default async function Project() {
