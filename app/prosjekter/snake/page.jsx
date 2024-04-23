@@ -16,8 +16,9 @@ import { Photostrip } from '@/components/Photostrip';
 const images = [
   '/snake_menu.jpg',
   '/snake_rules.jpg',
-  '/snake_play.jpg',
   '/snake_debug_mode.jpg',
+  '/snake_play.jpg',
+  '/snake_game_over.jpg'
 ];
 
 export default async function Project() {
@@ -34,10 +35,18 @@ export default async function Project() {
         title='Overskrift'
         description='Kort forklaring av hva prosjektet omhandlet, eventuelt hvem det var for.'
       />
-      <TextBlock
-        title='Overskrift'
-        description='Kort forklaring av hva prosjektet omhandlet, eventuelt hvem det var for.'
-      />
+
+        <p>
+          Source Code: {' '}
+          <a
+            className='font-bold hover:underline'
+            href='https://github.com/FridaHaars/inf100/tree/main/labs/snake'
+          >
+            Snake lab, UiB
+          </a>
+        </p>
+
+
     </div>
   );
 }
