@@ -21,13 +21,14 @@ export function Introduction() {
       <div className='flex flex-col gap-5 my-auto text-center sm:text-left'>
         <h1 style={{ color: 'darkgoldenrod' }} className='text-secondary-700 text-4xl sm:text-6xl'>Velkommen</h1>
         <p>
-          Jeg heter Frida Angen Hårstad. Du kan sende meg en epost på:{' '}
+          Jeg heter Frida Angen Hårstad. Du kan sende meg en epost på: {' '}
           <a
             className='font-bold hover:underline'
             href='mailto:fridaharstad@gmail.com'
           >
             fridaharstad@gmail.com
           </a>
+            
             {' '}
           <a
             className='font-bold hover:underline'
