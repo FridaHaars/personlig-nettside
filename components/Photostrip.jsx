@@ -1,9 +1,6 @@
 import Image from "next/image";
 import './Photostrip.css';
 
-/**
- * This component renders a list of images that are horizontally scrollable.
- */
 export function Photostrip({ images }) {
   return (
     <div className="container">
@@ -12,7 +9,9 @@ export function Photostrip({ images }) {
           <Image
             alt="photostrip"
             src={image}
-            layout="fill"
+            layout="responsive"
+            width={405}
+            height={208}
             className="photostrip-image"
           />
         </div>

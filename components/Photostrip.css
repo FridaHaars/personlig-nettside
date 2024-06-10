@@ -1,22 +1,24 @@
+/* Photostrip.css */
 .container {
     display: flex;
     scroll-snap-type: x mandatory;
     justify-content: start;
     gap: 8px;
     overflow-x: auto;
+    padding: 10px;
 }
   
 .imageWrapper {
     position: relative;
-    width: 405px;
-    height: 208px;
+    flex: 0 0 auto;
+    width: 405px; 
+    height: auto;
     scroll-snap-align: center;
 }
-
+  
 .photostrip-image {
-    object-fit: contain; /* Use 'contain' instead of 'cover' to avoid cropping */
     width: 100%;
-    height: 100%;
-    position: absolute; /* Required for layout="fill" */
-  }
+    height: auto; 
+    object-fit: contain; 
+}
   
