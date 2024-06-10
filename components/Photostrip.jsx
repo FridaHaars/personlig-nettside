@@ -11,11 +11,11 @@ export function Photostrip({ images }) {
         // Vi bruker denne til å gi hvert bilde en unik key, slik at React vet hvilke elementer som er endret.
         return (
           <Image
-            alt="Bilde av meg"
+            alt='photostrip'
             key={index}
             src={image}
-            width={405}
-            height={208}
+            //width={405}
+            //height={208}
             className="snap-center"
           />
         );
