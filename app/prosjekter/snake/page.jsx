@@ -34,8 +34,8 @@ export default async function Project() {
       <Photostrip images={images} />
 
       <TextBlock
-        title='Overskrift'
-        description='Kort forklaring av hva prosjektet omhandlet, eventuelt hvem det var for.'
+        title='<proj>'
+        description='<desc>'
       />
 
         <p>
