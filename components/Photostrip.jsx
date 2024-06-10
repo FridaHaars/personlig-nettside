@@ -15,7 +15,7 @@ export function Photostrip({ images }) {
             key={index}
             src={image}
             //width={405}
-            //height={208}
+            height={208}
             className="snap-center"
           />
         );
