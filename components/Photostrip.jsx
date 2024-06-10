@@ -1,8 +1,32 @@
 import Image from "next/image";
+import './Photostrip.css';
 
 /**
- * Denne komponenten rendrer en liste med bilder som er skrollabre horisontalt.
+ * This component renders a list of images that are horizontally scrollable.
  */
+export function Photostrip({ images }) {
+  return (
+    <div className="container">
+      {images.map((image, index) => (
+        <div key={index} className="imageWrapper">
+          <Image
+            alt="photostrip"
+            src={image}
+            layout="fill"
+            objectFit="cover"
+            className="photostrip-image"
+          />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+
+/**
+import Image from "next/image";
+
+/**
 export function Photostrip({ images }) {
   return (
     <div className="flex snap-x snap-mandatory justify-start gap-8 overflow-x-auto">
@@ -14,8 +38,8 @@ export function Photostrip({ images }) {
             alt='photostrip'
             key={index}
             src={image}
-            width={image.width / 50}
-            height={image.height / 50}
+            width={405}
+            height={208}
             className="snap-center"
           />
         );
@@ -23,3 +47,4 @@ export function Photostrip({ images }) {
     </div>
   );
 }
+ */

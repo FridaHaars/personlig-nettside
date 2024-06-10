@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    justify-content: start;
+    gap: 8px;
+    overflow-x: auto;
+}
+  
+.imageWrapper {
+    position: relative;
+    width: 405px;
+    height: 208px;
+    scroll-snap-align: center;
+}
+
+.photostrip-image {
+    object-fit: cover;
+}
+  
