@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import "./globals.css";
 import { Inter, Montserrat, Fira_Code } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
   title: "Frida A. Hårstad",
