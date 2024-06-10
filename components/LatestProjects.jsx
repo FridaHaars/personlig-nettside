@@ -11,19 +11,12 @@ import Image from 'next/image';
 // Her definerer hvilke prosjekter vi vil vise nedenfor.
 const latestProjects = [
   {
-    title: 'Prosjekter ved Universitetet i Bergen',
-    description:
-      'Her er en samling av noen av mine oppgaver og programmeringsprosjekter ved UiB.',
-    //image: '/snake_menu.jpg',
-    href: '/prosjekter/uib',
-  },
-  {
     title: 'Snake',
     description:
       'Klassisk Snake-spill skrevet i Python for ukesprosjekt i INF100 ved UiB.',
     image: '/snake_menu.jpg',
-    href: '/prosjekter/uib/snake',
-    },
+    href: '/prosjekter/snake',
+  },
   {
     title: 'Prosjekter ved KiB',
     description:

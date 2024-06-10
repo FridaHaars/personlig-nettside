@@ -1,4 +1,4 @@
-export default function Maintenance() {
+/*export default function Maintenance() {
     return (
       <div>
         <h1>Maintenance Mode &#128012;</h1>
@@ -6,4 +6,4 @@ export default function Maintenance() {
       </div>
     );
   }
-  
+  */
