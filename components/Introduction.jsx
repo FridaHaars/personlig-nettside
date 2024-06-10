@@ -7,6 +7,7 @@
  */
 
 import Image from 'next/image';
+import './style.css';
 
 export function Introduction() {
   return (
@@ -19,7 +20,7 @@ export function Introduction() {
         height={278}
       />
       <div className='flex flex-col gap-5 my-auto text-center sm:text-left'>
-        <h1 style={{ color: 'darkgoldenrod' }} className='text-secondary-700 text-4xl sm:text-6xl'>Frida Angen Hårstad</h1>
+        <h1 className='text-secondary-700 text-4xl sm:text-6xl'>Frida Angen Hårstad</h1>
         <p>
           Epost: {' '}
           <a
@@ -33,9 +34,15 @@ export function Introduction() {
             className='font-bold hover:underline'
             href='www.linkedin.com/in/FridaAH'
           >
-            www.linkedin.com/in/FridaAH
+            linkedin.com/in/FridaAH
           </a>
-          . 
+          <br/>GitHub: {' '}
+          <a
+            className='font-bold hover:underline'
+            href='https://github.com/FridaHaars'
+          >
+            github.com/FridaHaars
+          </a>
         </p>
       </div>
     </div>
