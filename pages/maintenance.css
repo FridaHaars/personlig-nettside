@@ -1,4 +1,9 @@
-* {
+.h1 {
+    font-family: 'latin';
+    text-align: 'center';
+}
+
+.p {
     font-family: 'latin';
     text-align: 'center';
 }
