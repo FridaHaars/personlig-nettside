@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export function middleware(request) {
-  const maintenanceMode = true; // Toggle this value to enable/disable maintenance mode
+  const maintenanceMode = false; // Toggle this value to enable/disable maintenance mode
 
   // Prevent redirect loop
   if (maintenanceMode && !request.nextUrl.pathname.startsWith('/maintenance')) {
