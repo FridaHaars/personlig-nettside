@@ -3,7 +3,7 @@ import "./globals.css";
 import { Inter, Montserrat, Fira_Code } from "next/font/google";
 
 export const metadata = {
-  title: "CV Workshop",
+  title: "Frida A. Hårstad",
 };
 
 // Her kan vi bytte font på siden.
