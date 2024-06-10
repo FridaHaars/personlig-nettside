@@ -13,7 +13,6 @@ export function Photostrip({ images }) {
             alt="photostrip"
             src={image}
             layout="fill"
-            objectFit="cover"
             className="photostrip-image"
           />
         </div>
