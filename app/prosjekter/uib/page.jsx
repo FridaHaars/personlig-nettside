@@ -35,7 +35,7 @@ export default async function Project() {
           description='Et utvalg av prosjekter og programmeringsoppgaver fra UiB.'
           image={backdrop}
         />
-      </div>
+      
 
       <Photostrip images={images} />
 
@@ -48,7 +48,7 @@ export default async function Project() {
           Kildekode for de forskjellige prosjektene deles ved forespørsel.
         </p>
 
-
+        </div>
     </div>
   );
 }
