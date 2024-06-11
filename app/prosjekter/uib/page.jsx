@@ -28,7 +28,7 @@ const images = [
 
 export default async function Project() {
   return (
-    <div className='ml-8 sm:ml-10 flex flex-col gap-16 mb-32'>
+    <div className='ml-8 sm:ml-10 flex flex-col gap-16 mb-32 text-right'>
       <ProjectHero
         title='Universitetet i Bergen'
         description='Et utvalg av prosjekter og programmeringsoppgaver fra UiB.'
