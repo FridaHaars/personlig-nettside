@@ -15,15 +15,20 @@ import snake_menu from '../../../public/prepared_statements.jpg';
 import { TextBlock } from '@/components/TextBlock';
 import { Photostrip } from '@/components/Photostrip';
 
-const images = [
+const images1 = [
   '/snake_menu.jpg',
   '/snake_rules.jpg',
   '/snake_debug_mode.jpg',
   '/snake_play.jpg',
-  '/snake_game_over.jpg',
-  '/headbook_loggedin.jpg',
+  '/snake_game_over.jpg'
+];
+
+const images2 = [
   '/blob_menu.jpg',
-  '/blob_gameplay.jpg'
+  '/blob_gameplay.jpg',
+  '/team_network_tactics.jpg',
+  '/tnt_menu.jpg',
+  '/headbook_loggedin.jpg'
 ];
 
 export default async function Project() {
@@ -34,11 +39,12 @@ export default async function Project() {
         description='Et utvalg av prosjekter og programmeringsoppgaver fra UiB.'
         image={snake_menu}
       />
-      <Photostrip images={images} />
+      <Photostrip images={images1} />
+      <Photostrip images={images2} />
 
       <TextBlock
         title='<proj>'
-        description='<desc>'
+        description='Beskrivelse kommer...'
       />
 
         <p>
