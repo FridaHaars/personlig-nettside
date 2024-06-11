@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {};
 
-module.exports = nextConfig;
+// module.exports = nextConfig;
 
 // for maintenance mode
-/**module.exports = {
+module.exports = {
     async rewrites() {
       return [
         {
@@ -13,5 +13,5 @@ module.exports = nextConfig;
         },
       ];
     },
-  };*/
+  };
   
