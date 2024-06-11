@@ -11,7 +11,7 @@
  *   eller du kan kopiere eksisterende komponenter fra components mappen.
  */
 import { ProjectHero } from '@/components/ProjectHero';
-import snake_menu from '../../../public/rectangle.jpg';
+import backdrop from '../../../public/prepared_statements.jpg';
 import { TextBlock } from '@/components/TextBlock';
 import { Photostrip } from '@/components/Photostrip';
 
@@ -20,16 +20,19 @@ const images = [
   '/snake_rules.jpg',
   '/snake_debug_mode.jpg',
   '/snake_play.jpg',
-  '/snake_game_over.jpg'
+  '/snake_game_over.jpg',
+  '/headbook_loggedin.jpg',
+  '/blob_menu.jpg',
+  '/blob_gameplay.jpg'
 ];
 
 export default async function Project() {
   return (
     <div className='ml-8 sm:ml-10 flex flex-col gap-16 mb-32'>
       <ProjectHero
-        title='Snake'
-        description='En versjon av det klassiske spillet snake, bygd som en ukesoppgave under introduksjon til programmering ved UiB.'
-        image={snake_menu}
+        title='Universitetet i Bergen'
+        description='Et utvalg av prosjekter og programmeringsoppgaver fra UiB.'
+        image={backdrop}
       />
       <Photostrip images={images} />
 
@@ -39,13 +42,7 @@ export default async function Project() {
       />
 
         <p>
-          Source Code: {' '}
-          <a
-            className='font-bold hover:underline'
-            href='https://github.com/FridaHaars/inf100/tree/main/labs/snake'
-          >
-            Snake lab, UiB
-          </a>
+          Kildekode for de forskjellige prosjektene deles ved forespørsel.
         </p>
 
 

@@ -7,10 +7,7 @@ export const metadata = {
   title: "Frida A. Hårstad",
 };
 
-// Her kan vi bytte font på siden.
-// Forsøk å kommenter ut inter fonten og utkommenter montserrat fonten.
-
-// Du kan lese mer om fonter her: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
+// Fonter: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 
 const font = Fira_Code({ subsets: ["latin"] });
 // const montserrat = Montserrat({ subsets: ["latin"] });
