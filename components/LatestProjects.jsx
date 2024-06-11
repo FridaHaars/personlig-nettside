@@ -28,7 +28,7 @@ const latestProjects = [
 
 export function LatestProjects() {
   return (
-    <div className='flex flex-col gap-5'>
+    <div className='flex flex-col gap-5 items-center justify-center'>
       <div className='flex flex-col gap-3'>
         <h2 className='text-xl'>Siste prosjekter</h2>
         {latestProjects.map((project) => (
