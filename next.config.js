@@ -5,13 +5,6 @@ const nextConfig = {};
 
 // for maintenance mode
 module.exports = {
-    async rewrites() {
-      return [
-        {
-          source: '/:path*',
-          destination: '/maintenance',
-        },
-      ];
-    },
-  };
+  reactStrictMode: true,
+};
   
