@@ -11,11 +11,11 @@ import Image from 'next/image';
 // Her definerer hvilke prosjekter vi vil vise nedenfor.
 const latestProjects = [
   {
-    title: 'Snake',
+    title: 'Prosjekter ved UiB',
     description:
-      'Klassisk Snake-spill skrevet i Python for ukesprosjekt i INF100 ved UiB.',
+      'Prosjekter utført ved Universitetet i Bergen.',
     image: '/snake_menu.jpg',
-    href: '/prosjekter/snake',
+    href: '/prosjekter/uib',
   },
   {
     title: 'Prosjekter ved KiB',
