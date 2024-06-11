@@ -11,7 +11,7 @@
  *   eller du kan kopiere eksisterende komponenter fra components mappen.
  */
 import { ProjectHero } from '@/components/ProjectHero';
-import backdrop from '../../../public/prepared_statements.jpg';
+import snake_menu from '../../../public/prepared_statements.jpg';
 import { TextBlock } from '@/components/TextBlock';
 import { Photostrip } from '@/components/Photostrip';
 
@@ -28,15 +28,12 @@ const images = [
 
 export default async function Project() {
   return (
-    <div className='relative w-full h-full flex flex-col gap-16 mb-32'>
-      <div className='ml-auto sm:ml-10 text-right'>
-        <ProjectHero
-          title='Universitetet i Bergen'
-          description='Et utvalg av prosjekter og programmeringsoppgaver fra UiB.'
-          image={backdrop}
-        />
-      </div>
-
+    <div className='ml-8 sm:ml-10 flex flex-col gap-16 mb-32'>
+      <ProjectHero
+        title='Universitetet i Bergen'
+        description='Et utvalg av prosjekter og programmeringsoppgaver fra UiB.'
+        image={snake_menu}
+      />
       <Photostrip images={images} />
 
       <TextBlock
@@ -44,10 +41,11 @@ export default async function Project() {
         description='<desc>'
       />
 
-      <p>
-        Kildekode for de forskjellige prosjektene deles ved forespørsel.
-      </p>
+        <p>
+          Kildekode for de forskjellige prosjektene deles ved forespørsel.
+        </p>
+
+
     </div>
   );
 }
-
