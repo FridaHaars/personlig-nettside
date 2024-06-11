@@ -9,7 +9,7 @@ import { CVSection } from '@/components/CVSection';
 
 const sections = [
   {
-    title: 'Arbeidserfaring',
+    title: 'Arbeid',
     sectionTitle: 'Assent AS | Brukerstyrt Personlig Assistent [BPA]',
     period: '2018 - pågående',
     description:

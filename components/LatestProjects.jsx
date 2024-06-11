@@ -28,13 +28,13 @@ const latestProjects = [
 
 export function LatestProjects() {
   return (
-    <div className='flex flex-col gap-5 items-center justify-center'>
-      <div className='flex flex-col gap-3'>
-        <h2 className='text-xl'>Siste prosjekter</h2>
+    <div className='flex flex-col gap-5'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
+        <h2 className='text-xl w-full col-span-full'>Siste prosjekter</h2>
         {latestProjects.map((project) => (
-          // Vi går over alle prosjektene vi har definert over og lager en ProjectPreview for hvert av dem.
-          // Når du looper over noe i React må du gi det en unik key. Her bruker vi tittelen som key.
-          // Dette er slik at React har kontroll på hvilke elementer som er endret, og ikke trenger å re-rendre alle.
+            // Vi går over alle prosjektene vi har definert over og lager en ProjectPreview for hvert av dem.
+            // Når du looper over noe i React må du gi det en unik key. Her bruker vi tittelen som key.
+            // Dette er slik at React har kontroll på hvilke elementer som er endret, og ikke trenger å re-rendre alle.
           <ProjectPreview key={project.title} {...project} />
         ))}
       </div>
@@ -51,8 +51,16 @@ export function LatestProjects() {
 
 function ProjectPreview({ title, description, image, href }) {
   return (
-    <a href={href} className='flex flex-col gap-4'>
-      <Image alt='Bilde av prosjektet' src={image} width={327} height={216} />
+    <a href={href} className='flex flex-col gap-4 w-full'>
+      <div className='relative w-full' style={{ paddingBottom: '85%' }}>
+        <Image
+          alt='Preview'
+          src={image}
+          layout='fill'
+          objectFit='cover'
+          className='absolute inset-0'
+        />
+      </div>
       <div className='flex flex-col gap-2'>
         <h3 className='text-lg'>{title}</h3>
         <p>{description}</p>

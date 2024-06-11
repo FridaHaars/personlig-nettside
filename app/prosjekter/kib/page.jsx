@@ -13,17 +13,20 @@ import performance from '../../../public/performance.jpg';
 import { TextBlock } from '@/components/TextBlock';
 import { Photostrip } from '@/components/Photostrip';
 
-const images = [
+const images1 = [
   '/space.jpg',
   '/performance_collage.jpg',
   '/performance.jpg',
+  '/moontiles.jpg',
+  '/linoprints.jpg'
+];
+
+const images2 = [
   '/shutter_collage1.jpg',
   '/shutter_collage2.jpg',
   '/shuttermonster.jpg',
   '/shutterbug.jpg',
-  '/moontiles.jpg',
-  '/linoprints.jpg'
-];
+]
 
 export default async function Project() {
   return (
@@ -33,11 +36,20 @@ export default async function Project() {
         description='Noen av mine prosjekter utført på Kunstskolen i Bergen.'
         image={performance}
       />
-      <Photostrip images={images} />
+      
+      <Photostrip images={images1} />
+      &#x2192;
+      <Photostrip images={images2} />
+      &#x2192;
 
       <TextBlock
-        title='<proj1>'
-        description='<desc1>'
+        title='Prosjekter'
+        description='Beskrivelse kommer...'
+      />
+
+      <TextBlock
+        title='Utstillinger'
+        description='Beskrivelse kommer...'
       />
 
     </div>

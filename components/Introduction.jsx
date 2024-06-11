@@ -7,20 +7,19 @@
  */
 
 import Image from 'next/image';
-import './style.css';
 
 export function Introduction() {
   return (
-    <div className='flex gap-5 flex-col sm:flex-row'>
+    <div className='bg-blue-50 flex gap-10 flex-col sm:flex-row'>
       <Image
         alt='Portrett'
         src='/profilBilde.jpg'
         className='rounded-full'
-        width={278}
+        width={300}
         height={278}
       />
-      <div className='flex flex-col gap-5 my-auto text-center sm:text-left'>
-        <h1 className='text-secondary-700 text-4xl sm:text-6xl'>Frida Angen Hårstad</h1>
+      <div className='flex flex-col gap-6 my-auto text-center sm:text-left'>
+        <h1 className='text-orange-900 text-4xl sm:text-6xl'>Frida Angen Hårstad</h1>
         <p>
           Epost: {' '}
           <a
