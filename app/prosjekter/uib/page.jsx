@@ -28,14 +28,12 @@ const images = [
 
 export default async function Project() {
   return (
-    <div className='relative w-full h-full'>
       <div className='absolute right-0 ml-8 sm:ml-10 flex flex-col gap-16 text-right mb-32'>
         <ProjectHero
           title='Universitetet i Bergen'
           description='Et utvalg av prosjekter og programmeringsoppgaver fra UiB.'
           image={backdrop}
         />
-      
 
       <Photostrip images={images} />
 
@@ -48,7 +46,7 @@ export default async function Project() {
           Kildekode for de forskjellige prosjektene deles ved forespørsel.
         </p>
 
-        </div>
+
     </div>
   );
 }
