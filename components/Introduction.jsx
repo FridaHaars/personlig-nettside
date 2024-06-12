@@ -53,10 +53,16 @@ export function Introduction() {
           kunnskap innen webutvikling og -design, her med hjelp av React/NextJS 
           og TailwindCSS. <br />
           <i>
-            <br/ > Nettsidens innhold og design oppdateres jevnlig  
+            <br/ > Nettsidens innhold og design oppdateres jevnlig...
           </i>
           &#128187; <br />
-          
+          <br/>Kildekode: {' '}
+            <a
+              className='font-bold hover:underline'
+              href='https://github.com/FridaHaars/personlig-nettside'
+            >
+              GitHub
+            </a>
         </p>
       </div>
     

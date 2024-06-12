@@ -30,7 +30,7 @@ export function LatestProjects() {
   return (
     <div className='flex flex-col gap-5'>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
-        <h2 className='text-xl w-full col-span-full'>Siste prosjekter</h2>
+        <h2 className='text-xl font-bold text-orange-900 w-full col-span-full'>Siste prosjekter</h2>
         {latestProjects.map((project) => (
             // Vi går over alle prosjektene vi har definert over og lager en ProjectPreview for hvert av dem.
             // Når du looper over noe i React må du gi det en unik key. Her bruker vi tittelen som key.
@@ -40,7 +40,7 @@ export function LatestProjects() {
       </div>
 
       <Link
-        className='text-secondary-700 font-bold hover:underline'
+        className='text-orange-700 font-bold hover:underline'
         href='/prosjekter'
       >
         Se alle mine prosjekter
