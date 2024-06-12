@@ -4,7 +4,6 @@ const nextConfig = {};
 module.exports = nextConfig;
 
 // for maintenance mode
-/**module.exports = {
+module.exports = {
   reactStrictMode: true,
-};*/
-  
+};
