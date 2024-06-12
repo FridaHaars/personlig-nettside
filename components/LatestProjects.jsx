@@ -68,3 +68,4 @@ function ProjectPreview({ title, description, image, href }) {
     </a>
   );
 }
+
