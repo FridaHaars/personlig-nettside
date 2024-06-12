@@ -1,9 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {};
 
-module.exports = nextConfig;
+// module.exports = nextConfig;
 
 // for maintenance mode
 module.exports = {
-  reactStrictMode: true,
-};
+  async rewrites() {
+    return [
+      {
+        source: '/:path*',
+        destination: '/maintenance',
+      },
+    ];
+  },
+}

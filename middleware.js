@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export function middleware(request) {
-  const maintenanceMode = false; // enable/disable maintenance mode
+  const maintenanceMode = true; // enable/disable maintenance mode
 
   // console.log('Middleware triggered');
   // console.log('Current Path:', request.nextUrl.pathname);
