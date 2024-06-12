@@ -26,7 +26,7 @@ const sections = [
     sectionTitle: 'Universitetet i Bergen | Informatikk: Datasikkerhet',
     period: 'Aug 2021 - Jun 2024',
     description:
-      'Et studie hvor jeg har lært grunnleggende datasikkerhet og programmering. Nøkkelferdigheter innebærer Python/Java, kryptografi, database, OOP, m.m.',
+      'Progammering i Python og Java, samt noe JavaScript, CSS, HTML og C. Inkluderer emner som dekker blant annet generell datasikkerhet, programvaresikkerhet, multiprogrammering, databaser og modellering, anvendt kryptografi, algoritmer, operativsystem, datanett, objektorientert programmering, samt matematiske emner.',
   },
   {
     sectionTitle: 'Universitetet i Bergen | Årsstudium: Kunsthistorie',
@@ -38,7 +38,7 @@ const sections = [
     sectionTitle: 'Kunstskolen i Bergen | 2-åring fagskoleutdanning innen visuelle fag',
     period: 'Aug 2015 - Mai 2024',
     description:
-      'Utøvende kunst over to år, inkludert kurs innen fargelære, videokunst, performance, modellering, visuelle uttrykk, billedkunst, kunsthistorie, m.m.',
+      'Toårig utøvende kunstutdanning. Praktiske kurs og prosjekter i blant annet fargelære, performance, videokunst, installasjoner, akt-maling og 3D akt-modellering, kunstmaling og tegning, materialkunnskap, verktøybruk, kunsthistorie, foto, mm.',
   },
 ];
 
