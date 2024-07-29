@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-// module.exports = nextConfig;
-
-// for maintenance mode
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
 };
+
+module.exports = nextConfig;
